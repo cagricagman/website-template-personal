@@ -18,6 +18,10 @@
 
     <!-- Fontawosome CSS -->
     <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+    
+    <!-- Scroll Reval Min Js -->
+    <script type="text/javascript" src="js/scrollreveal.min.js"></script>
+
 </head>
 
 <body>
@@ -51,7 +55,7 @@
     <header id="headerSection">
         <div class="overlay">
             <div class="container">
-                <div class="row text-center">
+                <div class="row text-center mainContent">
                     <div class="col my-auto">
                         <h1 class="display-3 text-white">
                             <span>CagriCagman</span> Landing Theme
@@ -106,10 +110,10 @@
     <section id="ourHistory">
         <div class="container">
             <div class="row mt-5">
-                <div class="col-sm-6">
+                <div class="col-sm-6 historyLeft">
                     <img src="images/monitor.png" class="img-fluid" alt="Our History">
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-6 historyRight">
                     <h2>Our History</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus efficitur vitae velit ut accumsan. Morbi et ex erat. Morbi felis felis, tincidunt volutpat volutpat non, efficitur eu urna. Nunc placerat lacus vitae lorem sagittis, sed vehicula neque ornare.</p>
 
@@ -125,7 +129,7 @@
     <section id="team" class="mt-5">
         <div class="container">
             <div class="row">
-                <div class="col-sm-3">
+                <div class="col-sm-3 team1">
                     <div class="card text-center">
                         <div class="card-block">
                             <img src="images/per-1.png" class="img-fluid rounded-circle my-4">
@@ -146,7 +150,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-3 team2">
                     <div class="card text-center">
                         <div class="card-block">
                             <img src="images/per-2.png" class="img-fluid rounded-circle my-4">
@@ -167,7 +171,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-3 team3">
                     <div class="card text-center">
                         <div class="card-block">
                             <img src="images/per-3.png" class="img-fluid rounded-circle my-4">
@@ -188,7 +192,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-3 team4">
                     <div class="card text-center">
                         <div class="card-block">
                             <img src="images/per-4.png" class="img-fluid rounded-circle my-4">
@@ -440,7 +444,7 @@
     <section id="contact" class="py-5">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-6 contactLeft">
                     <h2>CONTACT US</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus efficitur vitae velit ut accumsan. Morbi et ex erat.</p>
                     <h4>Adres</h4>
@@ -461,7 +465,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 contactRight">
                     <form>
                         <div class="form-group">
                             <div class="input-group input-group-lg">
@@ -505,6 +509,57 @@
     <script type="text/javascript" src="js/main.js"></script>
     <script>
 	var scroll = new SmoothScroll('a[href*="#"]');
+        window.sr = ScrollReveal();
+        sr.reveal('.mainContent',{
+            duration:3000
+        });
+        sr.reveal('#features',{
+            duration:2000
+        });
+        sr.reveal('.historyLeft',{
+            duration:2000,
+            origin:'left',
+            viewFactor: 0.2
+        });
+        sr.reveal('.historyRight',{
+            duration:2000,
+            origin:'right',
+            viewFactor: 0.2
+        });
+        sr.reveal('.team1',{
+            duration:2000,
+            origin:'left',
+            delay:500,
+            viewFactor: 0.2
+        });
+        sr.reveal('.team2',{
+            duration:2000,
+            origin:'left',
+            delay:1000,
+            viewFactor: 0.2
+        });
+        sr.reveal('.team3',{
+            duration:2000,
+            origin:'left',
+            delay:1500,
+            viewFactor: 0.2
+        });
+        sr.reveal('.team4',{
+            duration:2000,
+            origin:'left',
+            delay:2000,
+            viewFactor: 0.2
+        });
+        sr.reveal('.contactLeft',{
+            duration:2000,
+            origin:'left',
+            viewFactor: 0.2
+        });
+        sr.reveal('.contactRight',{
+            duration:2000,
+            origin:'right',
+            viewFactor: 0.2
+        });
     </script>
 </body>
 

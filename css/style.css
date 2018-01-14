@@ -292,3 +292,44 @@ footer span{
     font-weight: 500;
     cursor: default;
 }
+
+/*Media Queries*/
+@media screen and ( max-width:1200px ){
+    #ourHistory p {
+        line-height: 25px;
+    }
+    
+    #ourHistory .btn {
+        position: relative;
+    }
+    #ourHistory .historyRight {
+        text-align: center;
+    }
+}
+
+@media screen and ( max-width:992px ){
+ .display-3 {
+        font-size: 48px;
+    }
+}
+
+@media screen and ( max-width:768px ){
+     .display-3 {
+        font-size: 38px;
+    }
+    
+    .caseImage {
+        margin-left: 0;
+        text-align: center;
+    }
+    
+    .caseArea {
+        margin-right: 0;
+    }
+}
+
+@media screen and ( max-width:576px ){
+     .display-3 {
+        font-size: 32px;
+    }
+}

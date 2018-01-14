@@ -110,10 +110,10 @@
     <section id="ourHistory">
         <div class="container">
             <div class="row mt-5">
-                <div class="col-sm-6 historyLeft">
+                <div class="col-lg-6 historyLeft">
                     <img src="images/monitor.png" class="img-fluid" alt="Our History">
                 </div>
-                <div class="col-sm-6 historyRight">
+                <div class="col-lg-6 historyRight">
                     <h2>Our History</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus efficitur vitae velit ut accumsan. Morbi et ex erat. Morbi felis felis, tincidunt volutpat volutpat non, efficitur eu urna. Nunc placerat lacus vitae lorem sagittis, sed vehicula neque ornare.</p>
 
@@ -511,29 +511,35 @@
 	var scroll = new SmoothScroll('a[href*="#"]');
         window.sr = ScrollReveal();
         sr.reveal('.mainContent',{
-            duration:3000
+            duration:3000,
+            mobile: true
         });
         sr.reveal('#features',{
-            duration:2000
+            duration:2000,
+            mobile: true
         });
         sr.reveal('.historyLeft',{
             duration:2000,
+            mobile: true,
             origin:'left',
             viewFactor: 0.2
         });
         sr.reveal('.historyRight',{
             duration:2000,
+            mobile: true,
             origin:'right',
             viewFactor: 0.2
         });
         sr.reveal('.team1',{
             duration:2000,
+            mobile: true,
             origin:'left',
             delay:500,
             viewFactor: 0.2
         });
         sr.reveal('.team2',{
             duration:2000,
+            mobile: true,
             origin:'left',
             delay:1000,
             viewFactor: 0.2
@@ -546,17 +552,20 @@
         });
         sr.reveal('.team4',{
             duration:2000,
+            mobile: true,
             origin:'left',
             delay:2000,
             viewFactor: 0.2
         });
         sr.reveal('.contactLeft',{
             duration:2000,
+            mobile: true,
             origin:'left',
             viewFactor: 0.2
         });
         sr.reveal('.contactRight',{
             duration:2000,
+            mobile: true,
             origin:'right',
             viewFactor: 0.2
         });
